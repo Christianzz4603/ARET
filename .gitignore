@@ -7,8 +7,12 @@ local.properties
 *.aab
 .cxx/
 
+# Native libs are built by cargo-ndk (see docs/ROADMAP.md), never committed
+engine/src/main/jniLibs/
+jniLibs/
+
 # Rust
 target/
 
-# Model weights are tracked via Git LFS or release assets, not plain git
+# Model weights are shipped as release assets / LFS, not plain git
 *.gguf
