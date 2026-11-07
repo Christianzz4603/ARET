@@ -1,0 +1,16 @@
+[package]
+name = "aret-native"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "JNI bridge from the ARET Android app to the ghidra-decompiler Rust engine"
+
+[lib]
+name = "aret_native"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+# Mobile profile: aarch64 + arm + x86 specs, no online Lumina client (needs a C toolchain for TLS).
+ghidra-decompiler = { git = "https://github.com/Christianzz4603/ghidra-rust-engine", branch = "master", default-features = false, features = ["mobile"] }
+jni = "0.21"
+serde_json = "1"
