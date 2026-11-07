@@ -1,0 +1,14 @@
+# Android / Gradle
+.gradle/
+build/
+.idea/
+local.properties
+*.apk
+*.aab
+.cxx/
+
+# Rust
+target/
+
+# Model weights are tracked via Git LFS or release assets, not plain git
+*.gguf
