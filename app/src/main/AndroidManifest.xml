@@ -3,8 +3,9 @@
 
     <application
         android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
         android:label="ARET"
-        android:theme="@android:style/Theme.DeviceDefault.NoActionBar">
+        android:theme="@style/Theme.ARET">
         <activity
             android:name=".MainActivity"
             android:exported="true">
